@@ -1,0 +1,217 @@
+:root {
+    --background-color-primary: rgb(194, 182, 167);
+    --button-color: rgb(21, 21, 216);
+    --box-shadow-default: 1px 1px 30px -10px rgba(0,0,0,.7);
+
+}
+
+/********* STRUCTURE **************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.body {
+    background-color: var(--background-color-primary);
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+/**************** NAVBAR *************/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.list-button {
+    background-color: var(--button-color);
+    padding: .7em;
+    color: white;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow-default);
+}
+
+/********** BANNER ************/
+
+.banner {
+    box-shadow: var(--box-shadow-default);
+}
+.ban-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.ban-text {
+    width: 30%;
+}
+
+.ban-text p {
+    margin-bottom: 2em;
+}
+
+.pos-form-ban {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.form-ban-phone {
+    width: 270px;
+    height: 390px;
+    border-radius: 60%;
+    background: linear-gradient(90deg, blue, #611061 65%);
+    position: absolute;
+    top: 0;
+    left: 45;
+    z-index: -1;
+}
+
+
+.ban-phone {
+    width: 30%;
+    padding-top: 3em;
+}
+
+
+.lien-play,
+.lien-store {
+    width: 120px;
+    height: 120px;
+    padding-bottom: 5em;
+}
+
+/************ ENCART **********/
+
+.encart {
+    margin-top: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, blue, #611061);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encart p {
+    color: white;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+/*********** SECTION ICON **********/
+
+.row-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.phone-gd-icon {
+    width: 30%;
+    padding: 4em 0;
+}
+
+.card {
+    width: 55%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.iconiq {
+    width: 80%;
+    margin-top: 1em;
+}
+
+.iconiq img{
+    width: 80px;
+}
+
+.iconiq h3 {
+    font-size: 1.5em;
+}
+
+.iconiq p {
+    font-size: 0.9em;
+    padding-top: 0.5em;
+}
+
+/************ ENCART  ***********/
+
+.encart-2-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4em;
+}
+
+.encart-2-text {
+    width: 45%;
+}
+
+.encart-2-img {
+    width :25%;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+/*********** BANEND **********/
+
+.banend {
+    background-image: url('../img/phone-long.jpg');
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+}
+
+.banend h2 {
+    color: white;
+    padding: 2em 0;
+    width: 12%;
+}
+
+.banend a {
+    color: white;
+    padding: .7em;
+    border: 1px solid white;
+    border-radius: 25px;
+    
+}
