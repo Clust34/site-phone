@@ -114,10 +114,22 @@ h2 {
 .lien-play,
 .lien-store {
     width: 120px;
-    height: 120px;
+    
     padding-bottom: 5em;
 }
-
+@media screen and (max-width:768px){
+    .ban-row {
+        display: block;
+        text-align: center;
+    }
+    .ban-text {
+        width: 100%;
+    }
+    .form-ban-phone,
+    .ban-phone {
+        display: none;
+    }
+}
 /************ ENCART **********/
 
 .encart {
@@ -173,7 +185,15 @@ h2 {
     font-size: 0.9em;
     padding-top: 0.5em;
 }
-
+@media screen and (max-width:768px){
+    .row-icon {
+        display: block;
+    }
+    .card,
+    .phone-gd-icon {
+        width: 100%;
+    }
+}
 /************ ENCART  ***********/
 
 .encart-2-row {
@@ -193,6 +213,17 @@ h2 {
     margin-bottom: 1em;
 }
 
+@media screen and (max-width: 768px) {
+    .encart-2-row {
+        display: block;
+        
+    }
+
+    .encart-2-text,
+    .encart-2-img {
+        width: 100%;
+    }
+}
 /*********** BANEND **********/
 
 .banend {
@@ -214,4 +245,38 @@ h2 {
     border: 1px solid white;
     border-radius: 25px;
     
+}
+
+/************** banfoot ***************/
+.ban-foot {
+    background: linear-gradient(blue, #611061);
+    color: white;
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.ban-foot-btn {
+    width: 100%;
+}
+
+.ban-foot h4 {
+    width: 100%;
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+/************ Footer **********/
+.footer-column {
+    background-color: black;
+    height: 80px;
+    color: white;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+}
+
+.footer-column p {
+    margin-top: 1em
 }
